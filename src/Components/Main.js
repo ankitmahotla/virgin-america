@@ -1,6 +1,6 @@
 import React from "react";
 
-const products = [
+const locations = [
   {
     id: 1,
     name: 'Las Vegas',
@@ -83,11 +83,11 @@ const Main = () => {
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <h1 className="text-5xl text-center my-6">Book From <span className="text-fuchsia-800 font-semibold">San Francisco</span> to</h1>
 
-        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-          {products.map((product) => (
-            <a key={product.id} href={product.href} className="group p-2 ring ring-slate-400 ring-offset-0">
-              <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-              <p className="mt-1 text-lg font-medium text-gray-900">{product.code}</p>
+        <div className="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          {locations.map((location) => (
+            <a key={location.id} href={location.href} className="group p-2 ring ring-slate-400 ring-offset-0">
+              <h3 className="mt-4 text-sm text-gray-700">{location.name}</h3>
+              <p className="mt-1 text-lg font-medium text-gray-900">{location.code}</p>
             </a>
           ))}
         </div>

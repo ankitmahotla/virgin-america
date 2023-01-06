@@ -7,9 +7,9 @@ const Navbar = () => {
 
   const handleClose = () => setNav(!nav);
   return (
-    <div className="w-screen h-[60px] z-10 bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400 drop-shadow-lg">
+    <div className="w-full h-[60px] z-10 bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400 drop-shadow-lg">
       <div className="px-2 flex justify-between items-center h-full w-auto">
-      <div className="lg:hidden md:hidden mr-4 text-white cursor-pointer" onClick={handleClick}>
+      <div className="lg:hidden md:hidden mr-5 text-white cursor-pointer" onClick={handleClick}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
